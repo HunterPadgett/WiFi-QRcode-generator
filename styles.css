@@ -8,12 +8,12 @@ body {
  align-items: center;
  align-content: center;
  font-family: "Poppins", sans-serif;
- color: #f0ede3;
+ color: #f7f4ed;
  background-color: #ff7f50;
 }
 
 .app {
- background-color: #36454f;
+ background-color: #304f64;
  width: 50%;
  height: 90%;
  position: absolute;
@@ -56,10 +56,13 @@ p {
  font-size: 1.1em;
  border-radius: 0.5rem;
  border: 3px solid #000000;
+ transition: ease-in-out 0.2s;
 }
 
 input:focus {
- outline: 2px solid #000000;
+ outline: none;
+ transition: ease-in-out 0.2s;
+ box-shadow: 5px 5px #000000;
 }
 
 #wifi-form label {
@@ -75,20 +78,26 @@ input:focus {
 
 input {
  margin-left: 1rem;
- background-color: #f0ede3;
+ background-color: #f7f4ed;
  font-size: 1.7em;
  font-weight: 500;
 }
 
 button {
- background-color: #f0ede3;
+ background-color: #f7f4ed;
  border: 3px solid black;
  font-size: 1.5em;
  font-weight: 600;
  cursor: pointer;
  border-radius: 0.5rem;
- /* height: 40px;
-  width: 80px; */
+ height: 50px;
+ width: 130px;
+ transition: ease-in-out 0.2s;
+}
+
+button:hover {
+ box-shadow: 5px 5px #000000;
+ transition: ease-in-out 0.2s;
 }
 
 #qr-section {
@@ -96,4 +105,3 @@ button {
  justify-content: center;
  margin: 25px 0;
 }
-

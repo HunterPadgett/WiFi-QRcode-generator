@@ -8,14 +8,14 @@ body {
  align-items: center;
  align-content: center;
  font-family: "Poppins", sans-serif;
- color: rgb(0, 0, 0);
+ color: #f0ede3;
  background-color: #ff7f50;
 }
 
 .app {
- background-color: rgb(163, 161, 161);
+ background-color: #36454f;
  width: 50%;
- height: 80%;
+ height: 90%;
  position: absolute;
  left: 50%;
  top: 50%;
@@ -30,21 +30,24 @@ body {
  margin: 0 15px;
 }
 
-h1,
-p {
+h1 {
  font-weight: 700;
 }
 
+p {
+ font-weight: 400;
+}
+
 #main {
+ margin-top: 20px;
  display: flex;
  justify-content: center;
- width: 100% !important;
+ width: 100%;
 }
 
 #wifi-form {
  margin: 20px;
  width: 100%;
- /* justify-content: space-evenly; */
 }
 
 #wifi-form input {
@@ -52,34 +55,45 @@ p {
  width: 50%;
  font-size: 1.1em;
  border-radius: 0.5rem;
- border: 2px solid black;
+ border: 3px solid #000000;
 }
 
 input:focus {
- outline: 2px solid black;
+ outline: 2px solid #000000;
 }
 
 #wifi-form label {
- font-size: 1.5em;
+ font-size: 1.6em;
+ font-weight: 600;
 }
 
 #input-field {
  display: flex;
  justify-content: flex-start;
- /* vertical-align: center; */
-}
-
-label {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+ vertical-align: center;
 }
 
 input {
-  margin-left: 1rem;
+ margin-left: 1rem;
+ background-color: #f0ede3;
+ font-size: 1.7em;
+ font-weight: 500;
 }
+
+button {
+ background-color: #f0ede3;
+ border: 3px solid black;
+ font-size: 1.5em;
+ font-weight: 600;
+ cursor: pointer;
+ border-radius: 0.5rem;
+ /* height: 40px;
+  width: 80px; */
+}
+
 #qr-section {
  display: flex;
  justify-content: center;
  margin: 25px 0;
 }
+

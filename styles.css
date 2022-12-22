@@ -1,0 +1,85 @@
+body {
+ margin: none;
+ padding: none;
+ box-sizing: border-box;
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ font-family: "Poppins", sans-serif;
+ color: rgb(0, 0, 0);
+ background-color: #ff7f50;
+}
+
+.app {
+ background-color: rgb(163, 161, 161);
+ width: 50%;
+ height: 80%;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ border: 4px solid black;
+ border-radius: 15px;
+ box-shadow: 10px 10px #000000;
+}
+
+#instructions {
+ text-align: center;
+ margin: 0 15px;
+}
+
+h1,
+p {
+ font-weight: 700;
+}
+
+#main {
+ display: flex;
+ justify-content: center;
+ width: 100% !important;
+}
+
+#wifi-form {
+ margin: 20px;
+ width: 100%;
+ /* justify-content: space-evenly; */
+}
+
+#wifi-form input {
+ padding: 10px;
+ width: 50%;
+ font-size: 1.1em;
+ border-radius: 0.5rem;
+ border: 2px solid black;
+}
+
+input:focus {
+ outline: 2px solid black;
+}
+
+#wifi-form label {
+ font-size: 1.5em;
+}
+
+#input-field {
+ display: flex;
+ justify-content: flex-start;
+ /* vertical-align: center; */
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+input {
+  margin-left: 1rem;
+}
+#qr-section {
+ display: flex;
+ justify-content: center;
+ margin: 25px 0;
+}

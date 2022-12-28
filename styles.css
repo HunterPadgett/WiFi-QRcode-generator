@@ -12,9 +12,20 @@ body {
  background-color: #ff7f50;
 }
 
+::-webkit-scrollbar {
+ width: 12px;
+ height: 12px;
+}
+::-webkit-scrollbar-thumb {
+ background-color: #ff7f50;
+ border-radius: 10px;
+ border: 20px solid #000;
+ border-width: 3px;
+}
+
 .app {
  background-color: #304f64;
- width: 50%;
+ width: 70%;
  height: 90%;
  position: absolute;
  left: 50%;
@@ -28,19 +39,22 @@ body {
 
 #instructions {
  text-align: center;
- margin: 0 15px;
+ margin: 0 3em;
 }
 
 h1 {
  font-weight: 700;
+ font-size: 3.5em;
 }
 
 p {
  font-weight: 400;
+ font-size: 1.1em;
+ text-overflow: ellipsis;
 }
 
 #main {
- margin-top: 20px;
+ /* margin-top: 20px; */
  display: flex;
  justify-content: center;
  width: 100%;
@@ -49,6 +63,7 @@ p {
 #wifi-form {
  margin: 20px;
  width: 100%;
+ margin: 2em 5em;
 }
 
 #wifi-form input {
@@ -104,5 +119,5 @@ button:hover {
 #qr-code-container {
  display: flex;
  justify-content: center;
- margin: 25px 0;
+ margin: 3em 0;
 }

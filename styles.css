@@ -117,7 +117,7 @@ body {
 
  button {
   background-color: #f7f4ed;
-  color: #000;
+  color: #000 !important;
   border: 3px solid black;
   font-size: 1em;
   font-weight: 600;

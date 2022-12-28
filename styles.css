@@ -23,101 +23,612 @@ body {
  border-width: 3px;
 }
 
-.app {
- background-color: #304f64;
- width: 70%;
- height: 90%;
- position: absolute;
- left: 50%;
- top: 50%;
- transform: translate(-50%, -50%);
- border: 4px solid black;
- border-radius: 15px;
- box-shadow: 10px 10px #000000;
- overflow-y: scroll;
+@media (max-width: 991px) {
+ .app {
+  background-color: #304f64;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px #000000;
+  overflow-y: scroll;
+ }
+
+ #instructions {
+  text-align: center;
+  margin: 0 1em;
+ }
+
+ h1 {
+  font-weight: 700;
+  font-size: 1.5em;
+ }
+
+ p {
+  font-weight: 400;
+  font-size: 0.8em;
+  text-overflow: ellipsis;
+ }
+
+ #main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+
+ #wifi-form {
+  margin: 20px;
+  width: 100%;
+  margin: 1em 1em;
+ }
+
+ #wifi-form input {
+  padding: 10px;
+  width: 90%;
+  font-size: 1em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ input:focus {
+  outline: none;
+  transition: ease-in-out 0.2s;
+  box-shadow: 5px 5px #000000;
+ }
+
+ #wifi-form label {
+  font-size: 1em;
+  font-weight: 600;
+ }
+
+ #input-field {
+  position: relative;
+  display: block;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* vertical-align: center; */
+ }
+
+ i {
+  color: #000;
+  position: absolute;
+  right: 4%;
+  top: 67%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
+
+ #hide-icon {
+  visibility: hidden;
+ }
+
+ input {
+  /* margin-left: 1rem; */
+  background-color: #f7f4ed;
+  font-size: 1.7em;
+  font-weight: 500;
+ }
+
+ button {
+  background-color: #f7f4ed;
+  border: 3px solid black;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  height: 40px;
+  width: 100px;
+  transition: ease-in-out 0.2s;
+ }
+
+ button:hover {
+  box-shadow: 5px 5px #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ #qr-code-container {
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+ }
 }
 
-#instructions {
- text-align: center;
- margin: 0 3em;
+@media (min-width: 992px) {
+ /* SMALL LAPTOPS */
+ /* styles for screens with a width of 992px pixels and above */
+
+ .app {
+  background-color: #304f64;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px #000000;
+  overflow-y: scroll;
+ }
+
+ #instructions {
+  text-align: center;
+  margin: 0 2em;
+ }
+
+ h1 {
+  font-weight: 700;
+  font-size: 3.2em;
+ }
+
+ p {
+  font-weight: 400;
+  font-size: 1.1em;
+  text-overflow: ellipsis;
+ }
+
+ #main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+
+ #wifi-form {
+  width: 100%;
+  margin: 2em 3em;
+ }
+
+ #wifi-form input {
+  padding: 10px;
+  width: 70%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ input:focus {
+  outline: none;
+  transition: ease-in-out 0.2s;
+  box-shadow: 5px 5px #000000;
+ }
+
+ #wifi-form label {
+  font-size: 1.5em;
+  font-weight: 600;
+ }
+
+ #input-field {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: center;
+ }
+
+ i {
+  color: #000;
+  position: absolute;
+  right: 11.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
+
+ #hide-icon {
+  visibility: hidden;
+ }
+
+ input {
+  margin-left: 1rem;
+  background-color: #f7f4ed;
+  font-size: 1.7em;
+  font-weight: 500;
+ }
+
+ button {
+  background-color: #f7f4ed;
+  border: 3px solid black;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  height: 50px;
+  width: 130px;
+  transition: ease-in-out 0.2s;
+ }
+
+ button:hover {
+  box-shadow: 5px 5px #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ #qr-code-container {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+ }
 }
 
-h1 {
- font-weight: 700;
- font-size: 3.5em;
+@media (min-width: 1060px) {
+ i {
+  color: #000;
+  position: absolute;
+  right: 12.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-p {
- font-weight: 400;
- font-size: 1.1em;
- text-overflow: ellipsis;
+@media (min-width: 1107px) {
+ i {
+  color: #000;
+  position: absolute;
+  right: 14.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-#main {
- /* margin-top: 20px; */
- display: flex;
- justify-content: center;
- width: 100%;
+@media (min-width: 1200px) {
+ /* DESKTOPS */
+ /* styles for screens with a width of 1200px pixels and above */
+ .app {
+  background-color: #304f64;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px #000000;
+  overflow-y: scroll;
+ }
+
+ #instructions {
+  text-align: center;
+  margin: 0 2em;
+ }
+
+ h1 {
+  font-weight: 700;
+  font-size: 3.4em;
+ }
+
+ p {
+  font-weight: 400;
+  font-size: 1.1em;
+  text-overflow: ellipsis;
+ }
+
+ #main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+
+ #wifi-form {
+  width: 100%;
+  margin: 2em 3em;
+ }
+
+ #wifi-form input {
+  padding: 10px;
+  width: 70%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ input:focus {
+  outline: none;
+  transition: ease-in-out 0.2s;
+  box-shadow: 5px 5px #000000;
+ }
+
+ #wifi-form label {
+  font-size: 1.5em;
+  font-weight: 600;
+ }
+
+ #input-field {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: center;
+ }
+
+ i {
+  color: #000;
+  position: absolute;
+  right: 14.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
+
+ #hide-icon {
+  visibility: hidden;
+ }
+
+ input {
+  margin-left: 1rem;
+  background-color: #f7f4ed;
+  font-size: 1.7em;
+  font-weight: 500;
+ }
+
+ button {
+  background-color: #f7f4ed;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  height: 50px;
+  width: 130px;
+  transition: ease-in-out 0.2s;
+ }
+
+ button:hover {
+  box-shadow: 5px 5px #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ #qr-code-container {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+ }
 }
 
-#wifi-form {
- margin: 20px;
- width: 100%;
- margin: 2em 5em;
+@media (min-width: 1245px) {
+ i {
+  color: #000;
+  position: absolute;
+  right: 15.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-#wifi-form input {
- padding: 10px;
- width: 50%;
- font-size: 1.1em;
- border-radius: 0.5rem;
- border: 3px solid #000000;
- transition: ease-in-out 0.2s;
+@media (min-width: 1320px) {
+ i {
+  color: #000;
+  position: absolute;
+  right: 17.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-input:focus {
- outline: none;
- transition: ease-in-out 0.2s;
- box-shadow: 5px 5px #000000;
+@media (min-width: 1440px) {
+ .app {
+  background-color: #304f64;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px #000000;
+  overflow-y: scroll;
+ }
+
+ #instructions {
+  text-align: center;
+  margin: 0 2em;
+ }
+
+ h1 {
+  font-weight: 700;
+  font-size: 3.4em;
+ }
+
+ p {
+  font-weight: 400;
+  font-size: 1.1em;
+  text-overflow: ellipsis;
+ }
+
+ #main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+
+ #wifi-form {
+  width: 100%;
+  margin: 2em 3em;
+ }
+
+ #wifi-form input {
+  padding: 10px;
+  width: 60%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ input:focus {
+  outline: none;
+  transition: ease-in-out 0.2s;
+  box-shadow: 5px 5px #000000;
+ }
+
+ #wifi-form label {
+  font-size: 1.5em;
+  font-weight: 600;
+ }
+
+ #input-field {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: center;
+ }
+
+ i {
+  color: #000;
+  position: absolute;
+  right: 27%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
+
+ #hide-icon {
+  visibility: hidden;
+ }
+
+ input {
+  margin-left: 1rem;
+  background-color: #f7f4ed;
+  font-size: 1.7em;
+  font-weight: 500;
+ }
+
+ button {
+  background-color: #f7f4ed;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  height: 50px;
+  width: 130px;
+  transition: ease-in-out 0.2s;
+ }
+
+ button:hover {
+  box-shadow: 5px 5px #000000;
+  transition: ease-in-out 0.2s;
+ }
+
+ #qr-code-container {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+ }
 }
 
-#wifi-form label {
- font-size: 1.6em;
- font-weight: 600;
+@media (min-width: 1620px) {
+ .app {
+  background-color: #304f64;
+  width: 75%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px #000000;
+  overflow-y: scroll;
+ }
 }
 
-#input-field {
- display: flex;
- justify-content: flex-start;
- vertical-align: center;
+@media (min-width: 1750px) {
+ #wifi-form input {
+  padding: 10px;
+  width: 50%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+ i {
+  color: #000;
+  position: absolute;
+  right: 38%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-input {
- margin-left: 1rem;
- background-color: #f7f4ed;
- font-size: 1.7em;
- font-weight: 500;
+@media (min-width: 1875px) {
+ #wifi-form input {
+  padding: 10px;
+  width: 50%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+ i {
+  color: #000;
+  position: absolute;
+  right: 39%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-button {
- background-color: #f7f4ed;
- border: 3px solid black;
- font-size: 1.5em;
- font-weight: 600;
- cursor: pointer;
- border-radius: 0.5rem;
- height: 50px;
- width: 130px;
- transition: ease-in-out 0.2s;
+@media (min-width: 2040px) {
+ #wifi-form input {
+  padding: 10px;
+  width: 50%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+ i {
+  color: #000;
+  position: absolute;
+  right: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
-button:hover {
- box-shadow: 5px 5px #000000;
- transition: ease-in-out 0.2s;
-}
-
-#qr-code-container {
- display: flex;
- justify-content: center;
- margin: 3em 0;
+@media (min-width: 2150px) {
+ #wifi-form input {
+  padding: 10px;
+  width: 50%;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: 3px solid #000000;
+  transition: ease-in-out 0.2s;
+ }
+ i {
+  color: #000;
+  position: absolute;
+  right: 41%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }

@@ -45,12 +45,12 @@ body {
 
  h1 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 2em;
  }
 
  p {
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.85em;
   text-overflow: ellipsis;
  }
 
@@ -61,9 +61,9 @@ body {
  }
 
  #wifi-form {
-  margin: 20px;
+  /* margin: 20px; */
   width: 100%;
-  margin: 1em 1em;
+  margin: 0.8em 1em;
  }
 
  #wifi-form input {
@@ -117,6 +117,7 @@ body {
 
  button {
   background-color: #f7f4ed;
+  color: #000;
   border: 3px solid black;
   font-size: 1em;
   font-weight: 600;

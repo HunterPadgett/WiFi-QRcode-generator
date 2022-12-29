@@ -9,18 +9,33 @@ body {
  align-content: center;
  font-family: "Poppins", sans-serif;
  color: #f7f4ed;
- background-color: #ff7f50;
+ background-size: cover;
+ background-image: url("./blob-scene-haikeii.svg");
 }
+
+/* rgb(180, 64, 64) */
 
 ::-webkit-scrollbar {
  width: 12px;
  height: 12px;
 }
 ::-webkit-scrollbar-thumb {
- background-color: #ff7f50;
+ background-color: rgb(180, 64, 64);
  border-radius: 10px;
  border: 20px solid #000;
  border-width: 3px;
+}
+
+@media (max-width: 500px) {
+ i {
+  color: #000;
+  position: absolute;
+  right: 5% !important;
+  top: 67%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+ }
 }
 
 @media (max-width: 991px) {
@@ -97,7 +112,7 @@ body {
  i {
   color: #000;
   position: absolute;
-  right: 4%;
+  right: 10%;
   top: 67%;
   transform: translateY(-50%);
   z-index: 1;

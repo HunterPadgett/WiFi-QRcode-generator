@@ -40,10 +40,12 @@ function visibilityToggle() {
 
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
+    passwordInput.focus()
     showIcon.style.visibility = "hidden"
     hideIcon.style.visibility = "visible"
   } else {
     passwordInput.type = "password";
+    passwordInput.focus()
     showIcon.style.visibility = "visible"
     hideIcon.style.visibility = "hidden"
   }

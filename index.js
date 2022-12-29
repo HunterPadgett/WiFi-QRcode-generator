@@ -31,9 +31,35 @@ wifiForm.addEventListener("submit", (e) => {
   text: `WIFI:T:WPA;S:${wifi.ssid};P:${wifi.password};;`,
  });
 
+setTimeout(() => {
+  const qrCodeContainer = document.getElementById("qr-code-container");
+  const img = qrCodeContainer.querySelector("img");
+  const imgSrc = img.src;
+  const saveBtn = createSaveBtn(imgSrc);
+  qrCodeContainer.appendChild(saveBtn);
+// console.log(imgSrc)
+}, 500)
  // Clear the form text after qr code is created
  e.target.reset();
 });
+
+// function createSaveBtn() {
+//   // Create a new button element
+//   const saveBtn = document.createElement("button");
+//   saveBtn.id = 'saveBtn'
+
+//   // Set the text content of the button to "Save QR Code"
+//   saveBtn.textContent = "Save QR Code";
+
+//   // Set the href of the button to the imgSrc
+//   saveBtn.href = imgSrc;
+
+//   // Set the download attribute of the button to "wifi-qr-code"
+//   saveBtn.download = "wifi-qr-code";
+
+//   // Return the button element
+//   return saveBtn;
+// }
 
 function visibilityToggle() {
   const passwordInput = document.getElementById("password");
@@ -50,3 +76,5 @@ function visibilityToggle() {
     hideIcon.style.visibility = "hidden"
   }
 }
+
+

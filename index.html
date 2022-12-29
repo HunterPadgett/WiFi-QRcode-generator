@@ -28,14 +28,13 @@
  </head>
 
  <body>
-  <!-- <div class="spacer"></div> -->
   <div class="app">
    <div id="instructions">
     <h1>WI-FI QR CODE GENERATOR</h1>
     <p>1. Enter the name of your Wi-Fi device aka your SSID</p>
     <p>2. Enter the password for your Wi-Fi device</p>
     <p>
-     3. Generate the QR code. You can then save and print the image and have
+     3. Generate the QR code. You can then right click, save, and print the image. Once printed you can have
      your guests or customers connect to your Wi-Fi with ease simply by scanning
      the QR code
     </p>
@@ -61,8 +60,10 @@
     </form>
    </main>
 
-   <!-- Create a container to hold the QR code image -->
-   <div id="qr-code-container"></div>
+   <section id="qr-code-parent">
+    <!-- Create a container to hold the QR code image -->
+    <div id="qr-code-container"></div>
+   </section>
   </div>
 
   <script

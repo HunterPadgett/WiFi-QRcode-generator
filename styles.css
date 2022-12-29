@@ -10,6 +10,7 @@ body {
  font-family: "Poppins", sans-serif;
  color: #f7f4ed;
  background-size: cover;
+ height: 100vh;
  background-image: url("./blob-scene-haikeii.svg");
 }
 

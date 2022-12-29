@@ -10,8 +10,8 @@ body {
  font-family: "Poppins", sans-serif;
  color: #f7f4ed;
  background-size: cover;
- /* height: 100vh; */
- background-image: url("/blob-scene-haikeii.svg");
+ background-repeat: no-repeat;
+ background-image: url("https://github.com/HunterPadgett/WiFi-QRcode-generator/blob/main/blob-scene-haikeii.svg");
 }
 
 /* rgb(180, 64, 64) */

@@ -1,5 +1,13 @@
+const wifiForm = document.getElementById("wifi-form");
+const showIcon =  document.getElementById("show-icon");
+const hideIcon =  document.getElementById("hide-icon");
+
+// click events to toggle show/hide password functionality 
+showIcon.addEventListener("click", visibilityToggle);
+hideIcon.addEventListener("click", visibilityToggle);
+
 // Add a submit event listener to the form
-document.getElementById("wifi-form").addEventListener("submit", (e) => {
+wifiForm.addEventListener("submit", (e) => {
  // Prevent the form from submitting
  e.preventDefault();
 
@@ -13,7 +21,7 @@ document.getElementById("wifi-form").addEventListener("submit", (e) => {
   password: password,
  };
 
- console.log(wifi.password);
+// console.log(showIcon)
 
  //  reset the qr code container so that anytime a new qr code is generated, the old one disappears and only a single qr code is displayed
  document.getElementById("qr-code-container").innerHTML = "";
@@ -26,3 +34,17 @@ document.getElementById("wifi-form").addEventListener("submit", (e) => {
  // Clear the form text after qr code is created
  e.target.reset();
 });
+
+function visibilityToggle() {
+  const passwordInput = document.getElementById("password");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    showIcon.style.visibility = "hidden"
+    hideIcon.style.visibility = "visible"
+  } else {
+    passwordInput.type = "password";
+    showIcon.style.visibility = "visible"
+    hideIcon.style.visibility = "hidden"
+  }
+}
